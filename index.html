@@ -1,0 +1,31 @@
+<!-- This is a comment! (cmd+/ always makes a comment in VSCode [and others])-->
+<!-- an html file needs the html tag to run -->
+<html>
+    <script src="./aoife.js"></script>
+    <body>
+        <!-- the body is the content of your html -->
+        <!-- meta tags for SEO and other scripts might go in Head or other tags -->
+        <h1>
+            <!-- accessibility readers expect there to be only one h1 per page:
+        this breaks down the headers for accessibility tools and enables rapid tabbing -->
+            Domain Targeting Removal Tool
+        </h1>
+        <div>
+            <div>
+                <label for="domains">Paste domains from Deal ID here</label>
+                <textarea id="domains" placeholder="Make sure you are using comma separated values!"></textarea>
+            </div>
+            <div>
+                <label for="negative">Paste domains to be removed here</label>
+                <textarea id="negative" placeholder="These values should be in rows!"></textarea>
+            </div>
+            <button>Submit</button>
+        </div>
+        <div name="result">
+            <label for="results">Results</label>
+            <textarea id="results">
+            
+            </textarea>
+        </div>
+    </body>
+</html>

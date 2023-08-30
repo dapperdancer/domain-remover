@@ -2,6 +2,7 @@
 <!-- an html file needs the html tag to run -->
 <html>
     <script src="./aoife.js"></script>
+    <link rel="stylesheet" href="./style.css"
     <body>
         <!-- the body is the content of your html -->
         <!-- meta tags for SEO and other scripts might go in Head or other tags -->
@@ -10,18 +11,20 @@
         this breaks down the headers for accessibility tools and enables rapid tabbing -->
             Domain Targeting Removal Tool
         </h1>
-        <div>
-            <div>
-                <label for="domains">Paste domains from Deal ID here</label>
-                <textarea id="domains" placeholder="Make sure you are using comma separated values!"></textarea>
-            </div>
-            <div>
-                <label for="negative">Paste domains to be removed here</label>
-                <textarea id="negative" placeholder="These values should be in rows!"></textarea>
+        <form class="form">
+            <div class="inputs">
+                <div class="deal-input input">
+                    <label for="domains">Paste domains from Deal ID here:</label>
+                    <textarea id="domains" placeholder="Make sure you are using comma separated values!"></textarea>
+                </div>
+                <div class="opty-input input">
+                    <label for="negative">Paste domains to be removed here:</label>
+                    <textarea id="negative" placeholder="These values should be in rows!"></textarea>
+                </div>
             </div>
             <button>Submit</button>
-        </div>
-        <div name="result">
+        </form>
+        <div class="results" name="result">
             <label for="results">Results</label>
             <textarea id="results">
             

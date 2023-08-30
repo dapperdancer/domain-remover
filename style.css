@@ -1,0 +1,39 @@
+body {
+    background-color: #f1f2f7;
+}
+.form {
+    text-align:center;
+}
+.results {
+    text-align: center;
+}
+button {
+    width: 100px; ;
+    height: 50px;
+    font-size:large;
+}
+textarea {
+    min-height: 150px;
+    max-height: 450px;
+    resize: vertical;
+}
+
+.inputs {
+    display:flex ;
+    justify-content: space-evenly;
+    
+}
+.inputs textarea {
+    width: 100%;
+}
+.input {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.results textarea {
+    width: 75%;
+}
+label {
+    font-size: larger;
+}

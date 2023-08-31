@@ -3,7 +3,8 @@ function loadHandler() {
     button.addEventListener('click', submitHandler)
 }
 
-function submitHandler() {
+function submitHandler(e) {
+    e.preventDefault()
     let domains = document.querySelector('#domains').value
     let remove = document.querySelector('#negative').value
     console.log(domains,remove)

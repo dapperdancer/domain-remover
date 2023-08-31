@@ -7,7 +7,7 @@ function submitHandler(e) {
     e.preventDefault()
     let domains = document.querySelector('#domains').value
     let remove = document.querySelector('#negative').value
-    console.log(domains,remove)
+    console.log(`These are the domains from the deal:\n${domains}\nThis are the domains to be removed:\n${remove}`)
 
     domainRemover(domains,remove)
 }
@@ -17,17 +17,13 @@ function domainRemover(domains,remove) {
     let rows = domains.replaceAll(/,/g,'\n')
     // This one removes line breaks and replaces them with '|'
     let regexRemove = remove.replaceAll(/\n/g,'|')
-    console.log(rows)
-    console.log(regexRemove)
+    console.log(`The domains from the deals in a column:\n${rows}`)
     // Makes the regex
     let regex = new RegExp(regexRemove,"g");
-    // Prints the regex after removal
-    console.log(rows.replace(regex,''));
     // Outputs the regex after removal to results
     let results = rows.replace(regex,'')
-    console.log(results)
     results = results.replace(/\n+/g,'\n')
-    console.log(results)
+    console.log(`The results:\n${results}`)
     // I want to put the results in the text area
     // I need to identify the textarea "results"
     document.querySelector('#results').value = results
